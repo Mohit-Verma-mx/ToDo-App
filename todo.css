@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+body
+{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ecf0f3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    overflow: hidden;
+    font-family: poppins;
+
+}
+.container 
+{
+    position: relative;
+    width: 440px;
+    height: 600px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  }
+
+.title
+{
+    margin: 0 0 30px 0;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #1DA1F2;
+    letter-spacing: 3px;
+}
+.sub-title 
+{  
+  position: absolute;
+  font-size: 13px;
+  bottom: 4px;
+  right: 4px;
+  text-decoration: none;
+  color: black;
+  background: yellow;
+  border-radius: 10px;
+  padding: 2px;
+}
+.todo-list
+{
+  display: block;
+  width: 350px;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+.list-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+.entered-list
+{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+.add-list
+{
+    border: none;
+    border-radius: 5px;
+    background-color: #1DA1F2;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+}
+.add-list.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.tasks
+{
+    width: 100%;
+    margin-top: 30px;
+}
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item p
+{
+    font-size: 16px;
+    color: #111;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.item.completed p
+{
+    text-decoration: line-through;
+    color: #11111180;
+}
+.item-btn
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.item-btn i{
+    color: #1DA1F2;
+    font-size: 18px;
+    cursor: pointer;
+}
+.item-btn :hover{
+    opacity: .6;
+    color: red;
+}
